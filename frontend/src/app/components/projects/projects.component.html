@@ -1,0 +1,43 @@
+<section id="projects" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 animate-on-scroll">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">My Projects</h2>
+      <p class="section-subtitle">A selection of work I've built — spanning web apps, dashboards, APIs, and tools.</p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="flex flex-wrap justify-center gap-8">
+      @for (project of filtered; track project.id) {
+      <div
+        class="animate-on-scroll group overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 w-full sm:w-80">
+        <div class="relative overflow-hidden aspect-[4/3]">
+          <img [src]="project.image" [alt]="project.title"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <!-- Overlay -->
+          <div
+            class="absolute inset-0 bg-dark/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center gap-3 p-6">
+            <span class="text-white font-bold text-xl text-center">{{ project.title }}</span>
+            <span class="text-primary font-medium text-sm">{{ project.category }}</span>
+            <div class="flex gap-2 flex-wrap justify-center">
+              @for (tag of project.tags; track tag) {
+              <span class="bg-primary/20 text-white text-xs px-3 py-1 rounded-full">{{ tag }}</span>
+              }
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-50 p-4 flex items-center justify-between gap-3">
+          <div>
+            <h3 class="font-bold text-gray-900">{{ project.title }}</h3>
+            <p class="text-primary text-sm font-medium">{{ project.category }}</p>
+          </div>
+          <a [href]="project.liveUrl || '#'" target="_blank"
+            class="flex-shrink-0 bg-primary text-white text-xs font-semibold px-3 py-2 rounded-lg hover:bg-orange-600 transition-colors">
+            Live Demo
+          </a>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,57 @@
+<footer class="bg-darker text-gray-400">
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
+    <div class="flex flex-wrap justify-center gap-10 mb-12">
+      <!-- Brand -->
+      <div class="w-full sm:w-64">
+        <h3 class="text-2xl font-bold text-white mb-4">Avinash<span class="text-primary">.</span></h3>
+        <p class="text-sm leading-relaxed mb-6">
+          Full Stack Developer based in Hyderabad, India. Passionate about building
+          scalable, user-friendly web applications.
+        </p>
+        <div class="flex gap-4">
+          <a href="https://x.com/avi___81" target="_blank"
+            class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm">𝕏</a>
+          <a href="https://www.linkedin.com/in/avinash-gembali/" target="_blank"
+            class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm font-bold">in</a>
+          <a href="https://github.com/avinashgembali" target="_blank"
+            class="w-10 h-10 rounded-full bg-white/10 hover:bg-primary flex items-center justify-center transition-colors text-white text-sm">gh</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="w-full sm:w-64">
+        <h4 class="text-white font-semibold mb-5 uppercase tracking-widest text-sm">Quick Links</h4>
+        <ul class="space-y-3 text-sm">
+          @for (link of ['home', 'about', 'domains', 'projects', 'contact']; track link) {
+          <li>
+            <button (click)="scrollTo(link)" class="hover:text-primary transition-colors capitalize">{{ link }}</button>
+          </li>
+          }
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="w-full sm:w-64">
+        <h4 class="text-white font-semibold mb-5 uppercase tracking-widest text-sm">Contact</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <span class="text-primary mt-0.5">📍</span>
+            <span>Hyderabad, Telangana, India</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-primary mt-0.5">📞</span>
+            <span>+91 9052244239</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-primary mt-0.5">📧</span>
+            <span>avinashgembali13&#64;gmail.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-8 text-center text-sm">
+      <p>© {{ year }} Avinash Gembali. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

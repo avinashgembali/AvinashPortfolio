@@ -1,0 +1,68 @@
+<section id="resume" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Header -->
+    <div class="text-center mb-16 animate-on-scroll">
+      <span class="section-label">My Journey</span>
+      <h2 class="section-title">Education and Experience</h2>
+      <p class="section-subtitle">
+        A snapshot of my education background and professional experience
+        that shaped who I am as a developer.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Education -->
+      <div class="animate-on-scroll">
+        <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+          <span
+            class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl">🎓</span>
+          Education
+        </h3>
+        <div class="relative pl-8 border-l-2 border-primary/20 space-y-8">
+          @for (item of portfolio.education; track item.title) {
+          <div class="relative">
+            <div class="absolute -left-10 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-md"></div>
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <span class="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">{{ item.year
+                }}</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-3 mb-1">{{ item.title }}</h4>
+              <p class="text-primary font-medium text-sm mb-3">{{ item.org }}</p>
+              <p class="text-gray-600 text-sm leading-relaxed">{{ item.description }}</p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="animate-on-scroll" style="transition-delay: 0.2s">
+        <h3 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+          <span
+            class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary text-xl">💼</span>
+          Experience
+        </h3>
+        <div class="relative pl-8 border-l-2 border-primary/20 space-y-8">
+          @for (item of portfolio.experience; track item.title) {
+          <div class="relative">
+            <div class="absolute -left-10 w-4 h-4 rounded-full bg-primary border-4 border-white shadow-md"></div>
+            <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <span class="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">{{ item.year
+                }}</span>
+              <h4 class="text-lg font-bold text-gray-900 mt-3 mb-1">{{ item.title }}</h4>
+              <p class="text-primary font-medium text-sm mb-3">{{ item.org }}</p>
+              <p class="text-gray-600 text-sm leading-relaxed">{{ item.description }}</p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Download CV -->
+    <div class="text-center mt-14 animate-on-scroll">
+      <a href="assets/Gembali_Avinash_Resume.pdf" download class="btn-primary text-base">
+        Download Full Resume
+      </a>
+    </div>
+  </div>
+</section>
