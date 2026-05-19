@@ -11,10 +11,10 @@
     <div class="flex flex-wrap justify-center gap-6 mb-16">
       @for (card of contactCards; track card.label) {
       <div
-        class="animate-on-scroll text-center bg-gray-50 rounded-2xl p-6 hover:bg-primary hover:text-white group transition-all duration-300 w-full sm:w-56">
+        class="animate-on-scroll text-center bg-gray-50 rounded-2xl p-6 hover:bg-primary hover:text-white group transition-all duration-300 w-full sm:w-72">
         <div class="text-3xl mb-3 group-hover:scale-110 transition-transform">{{ card.icon }}</div>
         <h4 class="font-bold text-gray-900 group-hover:text-white mb-2 transition-colors">{{ card.label }}</h4>
-        <p class="text-gray-600 group-hover:text-white/80 text-sm transition-colors break-all">{{ card.value }}</p>
+        <p class="text-gray-600 group-hover:text-white/80 text-sm transition-colors">{{ card.value }}</p>
       </div>
       }
     </div>
