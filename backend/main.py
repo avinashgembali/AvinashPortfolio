@@ -26,7 +26,7 @@ app.add_middleware(
         "https://avinash-portfolio-ssel.vercel.app"
     ],
     allow_credentials=True,
-    allow_methods=["POST", "GET", "OPTIONS"], 
+    allow_methods=["*"], 
     allow_headers=["*"],
 )
 

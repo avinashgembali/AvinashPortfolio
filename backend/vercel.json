@@ -9,10 +9,12 @@
   "routes": [
     {
       "src": "/(.*)",
-      "methods": ["OPTIONS"],
+      "methods": [
+        "OPTIONS"
+      ],
       "headers": {
         "Access-Control-Allow-Origin": "https://avinash-portfolio-ssel.vercel.app",
-        "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+        "Access-Control-Allow-Methods": "*",
         "Access-Control-Allow-Headers": "Content-Type, Accept, Authorization",
         "Access-Control-Max-Age": "86400"
       },
