@@ -90,10 +90,10 @@ Go to [https://www.emailjs.com](https://www.emailjs.com) and sign up. The free p
 | Template variable | Maps to |
 |---|---|
 | `{{from_name}}` | Sender's name from the form |
-| `{{from_email}}` | Sender's email address |
 | `{{subject}}` | Message subject |
 | `{{message}}` | Message body |
 | `{{to_email}}` | Your email address |
+| `{{reply_to}}` | Sender's email address |
 
 - Save and copy the **Template ID** (looks like `template_xxxxxxx`).
 

@@ -48,7 +48,6 @@ export class ContactComponent implements OnInit {
     try {
       await emailjs.send(environment.emailjs.serviceId, environment.emailjs.templateId, {
         from_name: this.form.name,
-        from_email: this.form.email,
         subject: this.form.subject,
         message: this.form.message,
         to_email: 'avinashgembali13@gmail.com',
