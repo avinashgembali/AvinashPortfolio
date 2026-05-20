@@ -22,7 +22,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://avinash-portfolio-ssel.vercel.app"
+    ],
+    allow_credentials=True,
     allow_methods=["POST", "GET", "OPTIONS"], 
     allow_headers=["*"],
 )
