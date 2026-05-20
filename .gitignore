@@ -1,0 +1,5 @@
+# Claude Code internals
+.claude/
+
+# macOS
+.DS_Store

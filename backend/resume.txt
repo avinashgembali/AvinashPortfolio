@@ -1,0 +1,74 @@
+PERSONAL INFORMATION
+Name: Avinash Gembali
+Email: avinashgembali13@gmail.com
+Phone: 9052244239
+LinkedIn: Available on LinkedIn
+GitHub: Available on GitHub
+
+CAREER OBJECTIVE
+Aspiring software developer eager to apply my programming and problem-solving skills in a collaborative team, contribute to innovative projects, and grow with the organization.
+
+EDUCATION
+Degree: Bachelor of Technology in Computer Science and Engineering (CSE)
+College: Anil Neerukonda Institute of Technology And Sciences (ANITS)
+Location: Tagarapuvalasa, Vishakapatnam
+CGPA: 9.32
+Duration: 2022 – 2026
+
+School: Sri Chaitanya Junior College
+Location: Marikavalasa, Vishakapatnam
+Course: Intermediate M.P.C (Mathematics, Physics, Chemistry)
+Percentage: 97%
+Duration: 2020 – 2022
+
+INTERNSHIP / WORK EXPERIENCE
+Company: InnCircles
+Role: Software Developer Intern
+Type: Onsite
+Duration: July 2025 – Present (approximately 10-11 months as of May 2026)
+
+Responsibilities and Achievements at InnCircles:
+- Contributed to production-level backend systems at Inncircles using MEAN and MERN stacks, implementing database models and designing complex backend workflows to support a construction management platform, improving real-time data delivery and overall system performance for enterprise clients in construction and real estate.
+- Worked within agile teams using Jira and Bitbucket to manage development workflows, while implementing backend features including Excel data handling, reducing API latency from 20 seconds to 5–6 seconds (improved performance by 70–75%).
+- Authored unit test cases for backend flows using JUnit, ensuring correctness of API logic and contributing to improved code coverage across key service modules in the production environment.
+- Implemented role-based access control (RBAC) to manage user permissions and restrict access to modules based on assigned roles, enhancing platform security and authorization management.
+
+EXPERIENCE DURATION
+Avinash has approximately 10-11 months of professional work experience as a Software Developer Intern at InnCircles, starting July 2025. He is a B.Tech CSE graduate from ANITS (2022-2026) and is now available for full-time roles. He is considered a fresher/entry-level developer with hands-on production experience.
+
+PROJECTS
+Project 1: Helper Management System
+Tech Stack: MEAN Stack (MongoDB, Express, Angular, Node.js)
+Date: July 2025
+Description:
+- Built a full-stack helper management system with CRUD operations, role-based workflows, and RESTful APIs using Angular, Node.js, Express, and MongoDB.
+- Implemented unique QR code generation allowing helpers' details to be accessed via QR scanning with dynamic form-based data handling.
+
+Project 2: BatBazaar
+Tech Stack: MERN Stack (MongoDB, Express, React, Node.js)
+Date: March 2025
+Description:
+- Built a MERN stack e-commerce site to sell cricket bats, with user authentication, product management, a dynamic cart, and a responsive frontend.
+
+TECHNICAL SKILLS
+Languages: Java, Python, C, HTML, CSS, JavaScript
+Frameworks and Libraries: React, Express, Angular, Node.js
+Developer Tools: Git, VS Code, PyCharm, IntelliJ
+Databases: MongoDB, SQL
+Core CS Knowledge: Data Structures and Algorithms, DBMS, Operating Systems
+
+ACHIEVEMENTS AND CERTIFICATIONS
+- LeetCode: Solved 300+ problems covering data structures and algorithms
+- NPTEL Certification: Programming in Java
+
+EXTRACURRICULAR ACTIVITIES
+- NSS (National Service Scheme) Member: Actively participated in community service activities, focusing on social awareness, health campaigns, and environmental initiatives.
+
+ADAPTABILITY AND LEARNING ABILITY
+Avinash is a quick learner who can adapt to new technologies rapidly. His strong foundation in computer science fundamentals (Data Structures, Algorithms, DBMS, Operating Systems) along with a 9.32 CGPA enables him to pick up any new framework, language, or technology stack quickly. While his primary expertise is in the MEAN and MERN stacks, he is fully open and willing to work with other technologies such as Spring Boot, Django, Flutter, AI/ML frameworks, cloud platforms (AWS, GCP, Azure), DevOps tools, or any other tech stack required by the role. He has already demonstrated this adaptability by learning and working with multiple stacks (MEAN and MERN) simultaneously during his internship. Avinash believes in learning by doing and is always excited to explore new tools and technologies.
+
+OPENNESS TO NEW TECHNOLOGIES
+If asked about technologies not listed in his resume such as Spring Boot, Kotlin, Go, Rust, AI/ML, deep learning, cloud computing, DevOps, Docker, Kubernetes, or any other stack — Avinash is open to learning them. He has a solid programming foundation and a track record of quickly becoming productive in new environments. He would be able to get up to speed with any technology stack given a reasonable ramp-up period.
+
+SUMMARY
+Avinash Gembali is a B.Tech CSE graduate from ANITS Vishakapatnam with an excellent 9.32 CGPA (2022-2026). He has approximately 10-11 months of professional experience as a Software Developer Intern at InnCircles, contributing to production-level construction management software. He is skilled in full-stack development using both MEAN and MERN stacks. He is a quick learner who can adapt to new technologies and is open to working with any tech stack including Spring Boot, AI/ML, cloud platforms, and more. He has built multiple projects, solved 300+ LeetCode problems, and holds an NPTEL Java certification. He is currently available for full-time roles.

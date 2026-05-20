@@ -1,0 +1,55 @@
+<div class="chatbot-dialog">
+  <!-- Header -->
+  <div class="chatbot-header">
+    <div class="flex items-center gap-3">
+      <div class="chatbot-avatar">AI</div>
+      <div>
+        <p class="font-semibold text-white text-sm">Avinash's Assistant</p>
+        <p class="text-xs text-green-400 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 bg-green-400 rounded-full inline-block"></span>
+          Online
+        </p>
+      </div>
+    </div>
+    <button (click)="close.emit()" class="chatbot-close-btn" aria-label="Close chat">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Messages -->
+  <div #messageContainer class="chatbot-messages">
+    <div *ngFor="let msg of messages" [class]="msg.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
+      <div [class]="msg.role === 'user' ? 'chat-bubble-user' : 'chat-bubble-bot'">
+        {{ msg.text }}
+      </div>
+    </div>
+
+    <!-- Typing indicator -->
+    <div *ngIf="isLoading" class="flex justify-start">
+      <div class="chat-bubble-bot">
+        <span class="typing-dot"></span>
+        <span class="typing-dot"></span>
+        <span class="typing-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Input -->
+  <div class="chatbot-input-area">
+    <input
+      type="text"
+      [(ngModel)]="userInput"
+      (keydown)="onKeydown($event)"
+      placeholder="Ask about Avinash..."
+      class="chatbot-input"
+      [disabled]="isLoading"
+    />
+    <button (click)="send()" class="chatbot-send-btn" [disabled]="isLoading || !userInput.trim()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+      </svg>
+    </button>
+  </div>
+</div>

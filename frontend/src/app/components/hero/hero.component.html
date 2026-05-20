@@ -1,23 +1,74 @@
 <section id="home" class="relative h-screen min-h-[600px] overflow-hidden bg-black">
 
-  <!-- Content -->
+  <!-- Two-column layout -->
   <div class="relative z-10 h-full flex items-center">
-    <div class="max-w-7xl mx-auto px-6 w-full">
-      <div class="max-w-2xl animate-on-scroll visible">
-        <span class="text-primary font-semibold text-lg tracking-widest uppercase mb-4 block">{{ activeSlide.greeting }}</span>
+    <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+      <!-- LEFT: existing content -->
+      <div class="animate-on-scroll visible">
+        <span class="text-primary font-semibold text-lg tracking-widest uppercase mb-4 block">{{ activeSlide.greeting
+          }}</span>
         <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">{{ activeSlide.name }}</h1>
         <p class="text-xl text-gray-300 mb-10 leading-relaxed">{{ activeSlide.subtitle }}</p>
         <div class="flex flex-wrap gap-4">
           <button (click)="scrollTo('contact')" class="btn-primary text-base">Hire Me</button>
-          <button (click)="scrollTo('projects')" class="btn-outline text-base border-white text-white hover:bg-white hover:text-dark">My Works</button>
+          <button (click)="scrollTo('projects')"
+            class="btn-outline text-base border-white text-white hover:bg-white hover:text-dark">My Works</button>
         </div>
+      </div>
+
+      <!-- RIGHT: AI chat showcase -->
+      <div class="hidden md:flex flex-col items-center justify-center gap-8">
+
+        <!-- Orb with rings -->
+        <div class="ai-orb-wrapper">
+          <div class="pulse-ring ring-1"></div>
+          <div class="pulse-ring ring-2"></div>
+          <div class="pulse-ring ring-3"></div>
+          <div class="ai-orb">
+            <svg xmlns="http://www.w3.org/2000/svg" class="orb-icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Label -->
+        <div class="text-center">
+          <p class="text-white font-semibold text-lg mb-1">AI Portfolio Assistant</p>
+        </div>
+
+        <!-- Suggestion chips -->
+        <div class="flex flex-wrap justify-center gap-2 max-w-xs">
+          <button (click)="openChat('What are Avinash\'s skills?')" class="chip">What are his skills?</button>
+          <button (click)="openChat('Tell me about his projects')" class="chip">His projects</button>
+          <button (click)="openChat('Where does Avinash work?')" class="chip">Work experience</button>
+          <button (click)="openChat('What is Avinash\'s education?')" class="chip">Education</button>
+        </div>
+
+        <!-- Ask AI button -->
+        <button (click)="chatOpen = !chatOpen" class="ask-ai-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          Ask AI about Avinash
+        </button>
+
       </div>
     </div>
   </div>
 
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-8 right-8 z-10 hidden md:flex flex-col items-center gap-2 text-white/50">
-    <span class="text-xs tracking-widest uppercase rotate-90">Scroll</span>
-    <div class="w-px h-16 bg-white/30 animate-bounce"></div>
+  <!-- Chat dialog (floating bottom-right) -->
+  <div *ngIf="chatOpen" class="chat-dialog-anchor">
+    <app-chatbot (close)="chatOpen = false" [prefillMessage]="prefillMessage" />
   </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/40">
+    <span class="text-xs tracking-widest uppercase">Scroll</span>
+    <div class="w-px h-12 bg-white/30 animate-bounce"></div>
+  </div>
+
 </section>
