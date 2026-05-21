@@ -69,7 +69,7 @@ export class PortfolioService {
     {
       icon: '⚙️',
       title: 'Backend APIs',
-      description: 'RESTful and GraphQL APIs with Node.js, Express, and Python — secure and performant.',
+      description: 'RESTful APIs with Node.js, Express — secure and performant.',
     }
   ];
 
