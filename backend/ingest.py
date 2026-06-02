@@ -20,9 +20,9 @@ Phone: 9052244239
 Avinash is a B.Tech CSE graduate and software developer intern, currently available for full-time roles."""
     },
     {
-        "id": "career_objective",
-        "text": """Career Objective:
-Aspiring software developer eager to apply programming and problem-solving skills in a collaborative team, contribute to innovative projects, and grow with the organization."""
+        "id": "professional_summary",
+        "text": """Professional Summary:
+Full-stack developer experienced in MERN and MEAN stack development, with production experience building scalable backend systems and APIs. Skilled in Node.js, Express.js, MongoDB, React, and Angular, with expertise in performance optimization, RBAC implementation, and RESTful API development."""
     },
     {
         "id": "education",
@@ -33,21 +33,19 @@ Aspiring software developer eager to apply programming and problem-solving skill
     {
         "id": "experience_duration",
         "text": """Work Experience Duration:
-Avinash has approximately 10-11 months of professional work experience as a Software Developer Intern at InnCircles, starting July 2025 (as of May 2026). He is a B.Tech CSE graduate from ANITS (2022-2026) and is currently available for full-time roles. He is considered a fresher/entry-level developer with strong hands-on production experience."""
+Avinash has approximately 11-12 months of professional work experience as a Software Developer Intern at InnCircles, starting July 2025 (as of June 2026). He is a B.Tech CSE graduate from ANITS (Oct 2022 – April 2026) and is currently available for full-time roles. He is considered a fresher/entry-level developer with strong hands-on production experience."""
     },
     {
         "id": "internship",
         "text": """Internship / Work Experience:
 Company: InnCircles
 Role: Software Developer Intern (Onsite)
-Duration: July 2025 - Present (10-11 months as of May 2026)
-- Contributed to production-level backend systems using MEAN and MERN stacks.
-- Implemented database models and designed complex backend workflows for a construction management platform.
-- Improved real-time data delivery for enterprise clients in construction and real estate.
-- Used Jira and Bitbucket for agile development workflows.
-- Implemented Excel data handling, reducing API latency from 20s to 5-6s (70-75% performance improvement).
-- Authored unit test cases using JUnit for backend flows.
-- Implemented Role-Based Access Control (RBAC) for user permissions and module access restriction."""
+Duration: July 2025 - Present (11-12 months as of June 2026)
+- Engineered production-level backend systems using MEAN and MERN stacks, designing database models and implementing complex workflows for an enterprise construction management platform serving construction and real estate clients.
+- Optimized API performance by developing efficient Excel data processing pipelines, reducing response times from approximately 20 seconds to 5-6 seconds and improving throughput by 70-75%.
+- Authored unit test cases using JUnit, increasing code coverage across critical service modules and ensuring the correctness and reliability of API logic in production environments.
+- Implemented Role-Based Access Control (RBAC) to manage user permissions and restrict module access based on assigned roles, strengthening platform security and authorization management.
+- Collaborated within agile development teams using Jira and Bitbucket for sprint planning, task tracking, code reviews, and version-controlled software development."""
     },
     {
         "id": "project_helper_management",
@@ -60,27 +58,27 @@ Date: July 2025
     {
         "id": "project_batbazaar",
         "text": """Project: BatBazaar
-Tech Stack: MERN Stack (MongoDB, Express, React, Node.js)
+Tech Stack: MERN Stack (MongoDB, Express, React, Node.js, Razorpay, Cloudinary, Gemini AI)
 Date: March 2025
-- Built a MERN stack e-commerce site to sell cricket bats.
-- Features: user authentication, product management, dynamic cart, and responsive frontend."""
+- Built and deployed a full-stack e-commerce platform with Razorpay payment integration, real-time inventory tracking, order management, and role-based functionalities for customers and administrators.
+- Integrated a Google Gemini AI-powered chatbot to provide natural language cricket bat recommendations and dynamically apply product filters through a conversational interface.
+- Designed and implemented an Admin Dashboard for inventory management, stock updates, order tracking, and delivery status monitoring to streamline operational workflows."""
     },
     {
         "id": "technical_skills",
         "text": """Technical Skills:
-Languages: Java, Python, C, HTML, CSS, JavaScript
+Languages: Java, Python, C, HTML/CSS, JavaScript
 Frameworks and Libraries: React, Express, Angular, Node.js
-Developer Tools: Git, VS Code, PyCharm, IntelliJ
+Developer Tools: Git, Jira, Bitbucket, VS Code, IntelliJ IDEA
 Databases: MongoDB, SQL
-Core CS Knowledge: Data Structures and Algorithms, DBMS, Operating Systems
+Core Concepts: Data Structures & Algorithms, REST APIs, RBAC, Unit Testing, Agile Methodology
 Avinash is proficient in both MEAN stack (MongoDB, Express, Angular, Node.js) and MERN stack (MongoDB, Express, React, Node.js)."""
     },
     {
         "id": "achievements",
         "text": """Achievements and Certifications:
 - LeetCode: Solved 300+ problems covering data structures and algorithms.
-- NPTEL Certification: Programming in Java.
-Extracurricular: NSS (National Service Scheme) Member - participated in community service, social awareness, health campaigns, and environmental initiatives."""
+- NPTEL Certification: Programming in Java."""
     },
     {
         "id": "adaptability",
@@ -95,7 +93,7 @@ If asked about technologies not listed in Avinash's resume — such as Spring Bo
     {
         "id": "summary",
         "text": """Summary about Avinash Gembali:
-Avinash Gembali is a B.Tech CSE graduate from ANITS Vishakapatnam with an excellent 9.32 CGPA (2022-2026). He has approximately 10-11 months of professional experience as a Software Developer Intern at InnCircles, contributing to production-level construction management software. He is skilled in full-stack development using both MEAN and MERN stacks. He is a quick learner who can adapt to new technologies including Spring Boot, AI/ML, cloud platforms, and more. He has built multiple projects including BatBazaar (MERN e-commerce) and a Helper Management System with QR code generation. He has solved 300+ LeetCode problems and holds an NPTEL Java certification. He is currently available for full-time roles."""
+Avinash Gembali is a full-stack developer and B.Tech CSE graduate from ANITS Vishakapatnam with an excellent 9.32 CGPA (Oct 2022 – April 2026). He has approximately 11-12 months of professional experience as a Software Developer Intern at InnCircles, contributing to production-level construction management software. He is skilled in full-stack development using both MEAN and MERN stacks, with expertise in performance optimization, RBAC implementation, and RESTful API development. He is a quick learner who can adapt to new technologies including Spring Boot, AI/ML, cloud platforms, and more. He has built multiple projects including BatBazaar (MERN e-commerce with Razorpay payment integration, Cloudinary, Gemini AI chatbot, and Admin Dashboard) and a Helper Management System with QR code generation. He has solved 300+ LeetCode problems and holds an NPTEL Java certification. He is currently available for full-time roles."""
     },
 ]
 

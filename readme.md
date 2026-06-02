@@ -361,13 +361,59 @@ async def chat(req: ChatRequest):
 
 ## Updating Your Resume
 
-Edit `resume.txt`, then re-run:
+Whenever you update your resume, follow these steps in order:
+
+**Step 1 — Update the resume files**
+
+- Edit `backend/resume.txt` with the new resume content
+- Update the CHUNKS in `backend/ingest.py` to match the new content
+- Replace `frontend/src/assets/Gembali_Avinash_Resume.pdf` with the new PDF
+
+**Step 2 — Re-run ingestion**
 
 ```bash
+cd backend
+source venv/bin/activate
 python ingest.py
 ```
 
-Then recreate the Vector Search index in Atlas UI (the index is deleted when the collection is dropped).
+Expected output:
+```
+Dropped existing collection.
+Embedding 12 chunks...
+  embedded: personal_info
+  ...
+Ingested 12 chunks into MongoDB Atlas.
+```
+
+**Step 3 — Recreate the Vector Search index in MongoDB Atlas UI**
+
+> This step is required every time you run `ingest.py`. The script drops and recreates the collection, which deletes the Vector Search index along with it. The chatbot will return empty answers until the index is recreated.
+
+1. Go to [cloud.mongodb.com](https://cloud.mongodb.com) → open your cluster
+2. Click **"Atlas Search"** in the left sidebar
+3. Click **"Create Search Index"**
+4. Choose **"Atlas Vector Search"** → Next
+5. Select database: `portfolio`, collection: `resume_chunks`
+6. Switch to **JSON editor** and paste:
+
+```json
+{
+  "fields": [
+    {
+      "type": "vector",
+      "path": "embedding",
+      "numDimensions": 3072,
+      "similarity": "cosine"
+    }
+  ]
+}
+```
+
+7. Set index name to exactly: **`vector_index`**
+8. Click **Create** — wait 1-2 minutes until status shows **Active**
+
+The chatbot will now answer based on your updated resume.
 
 ---
 
