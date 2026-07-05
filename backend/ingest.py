@@ -1,9 +1,26 @@
 import os
+from datetime import date
 from google import genai
 from pymongo import MongoClient
 from dotenv import load_dotenv
 
 load_dotenv()
+
+
+def _experience_duration() -> str:
+    start = date(2025, 7, 1)
+    today = date.today()
+    months = (today.year - start.year) * 12 + (today.month - start.month)
+    if months < 12:
+        return f"approximately {months} month{'s' if months != 1 else ''}"
+    years = months // 12
+    rem = months % 12
+    if rem == 0:
+        return f"approximately {years} year{'s' if years != 1 else ''}"
+    return f"approximately {years} year{'s' if years != 1 else ''} and {rem} month{'s' if rem != 1 else ''}"
+
+
+_exp = _experience_duration()
 
 gemini_client = genai.Client(
     api_key=os.getenv("GOOGLE_API_KEY"),
@@ -32,15 +49,15 @@ Full Stack Developer with hands-on experience building scalable enterprise appli
     },
     {
         "id": "experience_duration",
-        "text": """Work Experience Duration:
-Avinash has approximately 11-12 months of professional work experience as a Software Developer Intern at InnCircles, starting July 2025 (as of June 2026). He is a B.Tech CSE graduate from ANITS (Oct 2022 – April 2026) and is currently available for full-time roles. He is considered a fresher/entry-level developer with strong hands-on production experience."""
+        "text": f"""Work Experience Duration:
+Avinash has {_exp} of professional work experience as a Software Developer Intern at InnCircles, starting July 2025. He is a B.Tech CSE graduate from ANITS (Oct 2022 – April 2026) and is currently available for full-time roles. He is considered a fresher/entry-level developer with strong hands-on production experience."""
     },
     {
         "id": "internship",
         "text": """Internship / Work Experience:
 Company: InnCircles
 Role: Software Developer Intern (Onsite)
-Duration: July 2025 - Present (11-12 months as of June 2026)
+Duration: July 2025 - Present ({_exp})
 - Engineered production-level backend systems using MEAN and MERN stacks, designing database models and implementing complex workflows for an enterprise construction management platform serving 1000+ users.
 - Optimized API performance by developing efficient Excel data processing pipelines, reducing response times from approximately 20 seconds to 5-6 seconds and improving throughput by 70-75%.
 - Authored 25+ unit test cases using JUnit, increasing code coverage across critical service modules and ensuring the correctness and reliability of API logic in production environments.

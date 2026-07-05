@@ -1,5 +1,6 @@
 import os
 import time
+from datetime import date
 from google import genai
 from google.genai import errors as genai_errors
 from pymongo import MongoClient
@@ -71,14 +72,28 @@ def retrieve_context(query: str, top_k: int = 3) -> str:
     return "\n\n".join(chunks)
 
 
+def _experience_duration() -> str:
+    start = date(2025, 7, 1)
+    today = date.today()
+    months = (today.year - start.year) * 12 + (today.month - start.month)
+    if months < 12:
+        return f"approximately {months} month{'s' if months != 1 else ''}"
+    years = months // 12
+    rem = months % 12
+    if rem == 0:
+        return f"approximately {years} year{'s' if years != 1 else ''}"
+    return f"approximately {years} year{'s' if years != 1 else ''} and {rem} month{'s' if rem != 1 else ''}"
+
+
 def build_prompt(context: str, question: str) -> str:
+    exp = _experience_duration()
     return f"""You are a helpful AI assistant on Avinash Gembali's portfolio website.
 Answer questions about Avinash using the context provided below.
 Be concise, friendly, and professional.
 
 Important rules:
 - If asked about a technology or skill not in his resume (e.g. Spring Boot, AI/ML, cloud, Docker), mention that while it may not be his primary stack, Avinash is a quick learner with strong CS fundamentals and is open to picking up new technologies. Do not say "I don't have that information" for tech-related questions.
-- If asked about years of experience, calculate from July 2025 (internship start) to the present — approximately 11-12 months as of June 2026.
+- If asked about years of experience, Avinash started his internship at InnCircles in July 2025. As of today he has {exp} of professional experience.
 - Only say "I don't have information about that question" for truly unrelated questions with no context available.
 - Never make up facts. Base all answers on the context below.
 
