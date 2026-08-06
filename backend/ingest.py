@@ -34,7 +34,7 @@ CHUNKS = [
 Name: Avinash Gembali
 Email: avinashgembali13@gmail.com
 Phone: 9052244239
-Avinash is a B.Tech CSE graduate and software developer intern, currently available for full-time roles."""
+Avinash is a B.Tech CSE graduate and Full Stack Developer currently working as a Product Developer at InnCircles."""
     },
     {
         "id": "professional_summary",
@@ -50,19 +50,27 @@ Full Stack Developer with hands-on experience building scalable enterprise appli
     {
         "id": "experience_duration",
         "text": f"""Work Experience Duration:
-Avinash has {_exp} of professional work experience as a Software Developer Intern at InnCircles, starting July 2025. He is a B.Tech CSE graduate from ANITS (Oct 2022 – April 2026) and is currently available for full-time roles. He is considered a fresher/entry-level developer with strong hands-on production experience."""
+Avinash has {_exp} of total professional experience at InnCircles. He first joined as a Software Developer Intern (July 2025 – July 2026) and was then converted to a full-time Product Developer role from August 2026 onwards. He is a B.Tech CSE graduate from ANITS (Oct 2022 – April 2026)."""
     },
     {
         "id": "internship",
-        "text": """Internship / Work Experience:
+        "text": """Internship:
 Company: InnCircles
 Role: Software Developer Intern (Onsite)
-Duration: July 2025 - Present ({_exp})
+Duration: July 2025 – July 2026 (12 months)
 - Engineered production-level backend systems using MEAN and MERN stacks, designing database models and implementing complex workflows for an enterprise construction management platform serving 1000+ users.
 - Optimized API performance by developing efficient Excel data processing pipelines, reducing response times from approximately 20 seconds to 5-6 seconds and improving throughput by 70-75%.
 - Authored 25+ unit test cases using JUnit, increasing code coverage across critical service modules and ensuring the correctness and reliability of API logic in production environments.
 - Implemented Role-Based Access Control (RBAC) across 3 user roles to manage permissions and restrict module access based on assigned responsibilities, strengthening platform security and authorization management.
 - Collaborated within a 50-member agile development team using Jira and Bitbucket for sprint planning, task tracking, code reviews, and version-controlled software development."""
+    },
+    {
+        "id": "full_time_role",
+        "text": f"""Full-Time Employment:
+Company: InnCircles
+Role: Product Developer (Onsite)
+Duration: August 2026 – Present ({_exp} total experience at InnCircles including internship)
+Avinash was converted from a Software Developer Intern to a full-time Product Developer at InnCircles starting August 2026, recognising his contributions during the internship."""
     },
     {
         "id": "project_helper_management",
@@ -108,7 +116,7 @@ If asked about technologies not listed in Avinash's resume — such as Spring Bo
     {
         "id": "summary",
         "text": """Summary about Avinash Gembali:
-Avinash Gembali is a Full Stack Developer and B.Tech CSE graduate from ANITS Vishakapatnam with a 9.32 CGPA (Oct 2022 – April 2026). He has approximately 11-12 months of experience as a Software Developer Intern at InnCircles, building production-level systems for a construction management platform serving 1000+ users. He improved backend API performance by 70%+, authored 25+ unit test cases, implemented RBAC across 3 user roles, and collaborated in a 50-member agile team. He built BatBazaar (MERN e-commerce with 15+ REST APIs, Razorpay, Cloudinary, Gemini AI chatbot, 5+ module Admin Dashboard) and a Helper Management System (MEAN stack with 10+ REST APIs and QR code generation). He has solved 300+ LeetCode problems and holds an NPTEL Java certification. He is currently available for full-time roles."""
+Avinash Gembali is a Full Stack Developer and B.Tech CSE graduate from ANITS Vishakapatnam with a 9.32 CGPA (Oct 2022 – April 2026). He started as a Software Developer Intern at InnCircles in July 2025 and was converted to a full-time Product Developer role in August 2026. He has built production-level systems for a construction management platform serving 1000+ users, improved backend API performance by 70%+, authored 25+ unit test cases, implemented RBAC across 3 user roles, and collaborated in a 50-member agile team. He built BatBazaar (MERN e-commerce with 15+ REST APIs, Razorpay, Cloudinary, Gemini AI chatbot, 5+ module Admin Dashboard) and a Helper Management System (MEAN stack with 10+ REST APIs and QR code generation). He has solved 300+ LeetCode problems and holds an NPTEL Java certification."""
     },
 ]
 
