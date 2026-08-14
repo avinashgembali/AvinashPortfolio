@@ -96,7 +96,13 @@ export class PortfolioService {
 
   experience: ResumeItem[] = [
     {
-      year: 'July 2025 – Present',
+      year: 'Aug 2026 – Present',
+      title: 'Product Developer ',
+      org: 'InnCircles',
+      description: 'Developing scalable form and escalation workflows for construction operations, translating complex business requirements into reliable product features, workflows, and backend systems.',
+    },
+    {
+      year: 'July 2025 – July 2026',
       title: 'Software Developer Intern',
       org: 'InnCircles',
       description: 'Developed and maintained scalable web features, APIs, and dashboards for real-estate SaaS.',
